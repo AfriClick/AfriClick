@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import AfriClick from "../Component/Assets/AfriClick Hero.jpg";
+import AfriClick from "../Component/Assets/AfriClick Hero.webp";
 
 export const Hero = () => {
   return (

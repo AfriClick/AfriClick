@@ -1,8 +1,8 @@
 import React from "react";
 import { Target, Eye } from "lucide-react";
 import { motion } from "framer-motion";
-import about1 from "../Component/Assets/AboutAfriclick (2).jpg";
-import about2 from "../Component/Assets/AboutAfriclick.jpg";
+import about1 from "../Component/Assets/AboutAfriclick (2).webp";
+import about2 from "../Component/Assets/AboutAfriclick.webp";
 
 const About = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "../Component/Assets/FinalCTAImage.jpg"
+import BackgroundImage from "../Component/Assets/FinalCTAImage.webp"
 
 const FinalCTA = () => {
   return (

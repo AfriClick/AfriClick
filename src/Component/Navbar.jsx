@@ -33,7 +33,7 @@ const Navbar = () => {
       smooth={true}
       duration={500}
       spy={true}      
- 
+      offset={-80}
       className="relative cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 group"
     >
       {link}
@@ -89,7 +89,7 @@ const Navbar = () => {
       smooth={true}
       duration={500}
       spy={true}      
-  
+      offset={-80}
       className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
       onClick={() => setMenuOpen(false)}
     >

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { Link } from 'react-scroll';
 
+
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
       smooth={true}
       duration={500}
       spy={true}      
-      hashSpy={true}
+ 
       className="relative cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 group"
     >
       {link}
@@ -88,7 +89,7 @@ const Navbar = () => {
       smooth={true}
       duration={500}
       spy={true}      
-      hashSpy={true}
+  
       className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
       onClick={() => setMenuOpen(false)}
     >

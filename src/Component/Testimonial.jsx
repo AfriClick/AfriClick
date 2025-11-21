@@ -44,7 +44,7 @@ const Testimonial = () => {
   const { name, role, comment } = testimonials[index];
 
   return (
-    <div id="Testimonials">
+    <div id="testimonials">
     <section className="w-full bg-white py-20 dark:bg-gray-900">
       <div className="max-w-[65%] mx-auto text-center relative">
       <h1 className="font-extrabold text-2xl sm:text-3xl tracking-tighter bg-black text-transparent bg-clip-text mb-10 dark:text-white">

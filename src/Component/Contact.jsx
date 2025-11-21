@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact" className="bg-blue-100 dark:bg-gray-900 overflow-x-clip pb-20">
+    <div id="contact" className="bg-blue-100 dark:bg-gray-900 overflow-x-clip pb-20">
       <div className="max-w-[80%] mx-auto">
         <div className="max-w-2xl bg-blue-100 dark:bg-gray-900 rounded-lg">
           <motion.h2

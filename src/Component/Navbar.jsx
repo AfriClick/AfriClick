@@ -25,7 +25,7 @@ const Navbar = () => {
 
         {/* Desktop*/}
         <nav className="hidden md:flex space-x-8 font-medium">
-  {['Hero', 'About', 'Services', 'Testimonials', 'Contact'].map((link) => (
+  {['hero', 'about', 'services', 'testimonials', 'contact'].map((link) => (
     <Link
       key={link}
       to={link}
@@ -81,7 +81,7 @@ const Navbar = () => {
  
 
         <div className="flex flex-col py-6 max-w-[80%] mx-auto mt-20 h-full gap-6">
-  {['Hero', 'About', 'Service', 'Testimonial', 'Contact'].map((link) => (
+  {['hero', 'about', 'services', 'testimonials', 'contact'].map((link) => (
     <Link
       key={link}
       to={link}

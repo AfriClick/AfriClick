@@ -25,12 +25,14 @@ const Navbar = () => {
 
         {/* Desktop*/}
         <nav className="hidden md:flex space-x-8 font-medium">
-  {['Hero', 'About', 'Service', 'Testimonial', 'Contact'].map((link) => (
+  {['Hero', 'About', 'Services', 'Testimonials', 'Contact'].map((link) => (
     <Link
       key={link}
       to={link}
       smooth={true}
       duration={500}
+      spy={true}      
+      hashSpy={true}
       className="relative cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 group"
     >
       {link}
@@ -85,7 +87,8 @@ const Navbar = () => {
       to={link}
       smooth={true}
       duration={500}
-      offset={-80} // optional
+      spy={true}      
+      hashSpy={true}
       className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
       onClick={() => setMenuOpen(false)}
     >

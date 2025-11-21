@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Moon, Sun, Menu, X } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,15 +25,17 @@ const Navbar = () => {
 
         {/* Desktop*/}
         <nav className="hidden md:flex space-x-8 font-medium">
-  {['Home', 'About', 'Services', 'Testimonials', 'Contact'].map((link) => (
-    <a
-      href={`#${link}`}
+  {['Hero', 'About', 'Service', 'Testimonial', 'Contact'].map((link) => (
+    <Link
       key={link}
+      to={link}
+      smooth={true}
+      duration={500}
       className="relative cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 group"
     >
       {link}
       <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-    </a>
+    </Link>
   ))}
 </nav>
 
@@ -76,43 +79,20 @@ const Navbar = () => {
  
 
         <div className="flex flex-col py-6 max-w-[80%] mx-auto mt-20 h-full gap-6">
-        <a
-            href="#Hero"
-            className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
-            onClick={() => setMenuOpen(false)}
-        >
-            Home
-        </a>
-        <a
-            href="#About"
-            className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
-            onClick={() => setMenuOpen(false)}
-        >
-            About
-        </a>
-        <a
-            href="#Service"
-            className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
-            onClick={() => setMenuOpen(false)}
-        >
-            Services
-        </a>
-        <a
-            href="#Testimonial"
-            className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
-            onClick={() => setMenuOpen(false)}
-        >
-            Testimonials
-        </a>
-        <a
-            href="#Contact"
-            className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
-            onClick={() => setMenuOpen(false)}
-        >
-            Contact
-        </a>
-       
-    </div>
+  {['Hero', 'About', 'Service', 'Testimonial', 'Contact'].map((link) => (
+    <Link
+      key={link}
+      to={link}
+      smooth={true}
+      duration={500}
+      offset={-80} // optional
+      className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
+      onClick={() => setMenuOpen(false)}
+    >
+       {link}
+    </Link>
+  ))}
+</div>
           </motion.div>
         )}
       </AnimatePresence>

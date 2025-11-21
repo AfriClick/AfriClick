@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "../Component/Assets/FinalCTAImage.webp"
+import BackgroundImage from "../Component/Assets/FinalCTAImage.jpg"
 
 const FinalCTA = () => {
   return (
@@ -25,7 +25,9 @@ const FinalCTA = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-          <button className="dark:bg-indigo-600 dark:text-white px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300">
+          <button 
+            onClick={() => document.getElementById('Contact').scrollIntoView({ behavior: "smooth" })}
+          className="dark:bg-indigo-600 dark:text-white px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300">
             Book a Free 30-Minute Consultation
           </button>
         </div>
@@ -35,3 +37,7 @@ const FinalCTA = () => {
 };
 
 export default FinalCTA;
+
+
+
+

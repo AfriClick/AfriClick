@@ -24,16 +24,18 @@ const Navbar = () => {
 
         {/* Desktop*/}
         <nav className="hidden md:flex space-x-8 font-medium">
-          {['Home', 'About', 'Services', 'Testimonials', 'Contact'].map((link) => (
-            <span
-              key={link}
-              className="relative cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 group"
-            >
-              {link}
-              <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-            </span>
-          ))}
-        </nav>
+  {['Home', 'About', 'Services', 'Testimonials', 'Contact'].map((link) => (
+    <a
+      href={`#${link}`}
+      key={link}
+      className="relative cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 group"
+    >
+      {link}
+      <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  ))}
+</nav>
+
 
         
         <div className="flex items-center gap-4">

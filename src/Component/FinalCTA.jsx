@@ -26,7 +26,7 @@ const FinalCTA = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <button 
-            onClick={() => document.getElementById('Contact').scrollIntoView({ behavior: "smooth" })}
+            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: "smooth" })}
           className="dark:bg-indigo-600 dark:text-white px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300">
             Book a Free 30-Minute Consultation
           </button>

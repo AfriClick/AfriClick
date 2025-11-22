@@ -34,12 +34,12 @@ export const Hero = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <button   
-                onClick={() => document.getElementById('Contact').scrollIntoView({ behavior: "smooth" })} 
+                onClick={() => document.getElementById('contact').scrollIntoView({ behavior: "smooth" })} 
                 className="px-4 py-2 bg-indigo-600 hover:bg-blue-500 hover:border border-indigo-600 text-blue-600 text-white font-medium rounded-lg shadow-md transition-all duration-300">
                   Get Free SEO Audit
                 </button>
                 <button  
-                 onClick={() => document.getElementById('Contact').scrollIntoView({ behavior: "smooth" })}
+                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: "smooth" })}
                 className="border border-indigo-600 text-indigo-600 hover:bg-blue-50 dark:border-indigo-600 dark:text-indigo-600 dark:hover:bg-gray-800 font-medium transition-all duration-300 px-4 py-2 rounded-lg">
                   Book A Strategy Call
                 </button>

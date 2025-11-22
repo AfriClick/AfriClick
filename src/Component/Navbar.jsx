@@ -82,13 +82,17 @@ const Navbar = () => {
         <div className="flex flex-col py-6 max-w-[80%] mx-auto mt-20 h-full gap-6">
   {['hero', 'about', 'services', 'testimonials', 'contact'].map((link) => (
     <div
-    key={link}
     onClick={() => {
-      setMenuOpen(false);
-      setTimeout(() => {
-        document.getElementById(link)?.scrollIntoView({ behavior: "smooth" });
-      }, 10);
+      setMenuOpen(false);  
+      const section = document.getElementById(link);
+      if (section) {
+       
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 50);
+      }
     }}
+    
       className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
     >
        {link}

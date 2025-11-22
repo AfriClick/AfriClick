@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
 
  
-    <section id='hero'
+    <section id='hero' name="hero"
     className="w-full bg-blue-100 dark:bg-gray-900">
       <div className="min-h-screen flex flex-col mx-auto py-12 md:py-32 lg:py-32 overflow-hidden max-w-[90%] items-center justify-between">
         <div className="container mt-20 px-4 md:px-6 max-w-[1400px]">

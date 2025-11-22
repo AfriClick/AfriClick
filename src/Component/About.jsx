@@ -6,7 +6,7 @@ import about2 from "../Component/Assets/AboutAfriclick.webp";
 
 const About = () => {
   return (
-    <div id='about'
+    <div id='about' name="about"
     className="dark:bg-gray-900" >
       <motion.section
         className="w-[90%] mx-auto py-6 flex flex-col md:flex-row items-center gap-14 text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 transition-colors duration-500 mb-20"

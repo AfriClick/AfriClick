@@ -27,18 +27,16 @@ const Navbar = () => {
         {/* Desktop*/}
         <nav className="hidden md:flex space-x-8 font-medium">
   {['hero', 'about', 'services', 'testimonials', 'contact'].map((link) => (
-    <Link
-      key={link}
-      to={link}
-      smooth={true}
-      duration={500}
-      spy={true}      
-      offset={-80}
+    <div
+    key={link}
+    onClick={() => {
+      document.getElementById(link)?.scrollIntoView({ behavior: "smooth" });
+    }}
       className="relative cursor-pointer hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300 group"
     >
       {link}
       <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-    </Link>
+    </div>
   ))}
 </nav>
 
@@ -83,22 +81,18 @@ const Navbar = () => {
 
         <div className="flex flex-col py-6 max-w-[80%] mx-auto mt-20 h-full gap-6">
   {['hero', 'about', 'services', 'testimonials', 'contact'].map((link) => (
-    <Link
-      key={link}
-      to={link}
-      smooth={true}
-      duration={500}
-      spy={true}      
-      offset={-80}
+    <div
+    key={link}
+    onClick={() => {
+      setMenuOpen(false);
+      setTimeout(() => {
+        document.getElementById(link)?.scrollIntoView({ behavior: "smooth" });
+      }, 10);
+    }}
       className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
-      onClick={() => {
-        setMenuOpen(false);
-        setTimeout(() => {}, 0);  
-      }}
-      
     >
        {link}
-    </Link>
+    </div>
   ))}
 </div>
           </motion.div>

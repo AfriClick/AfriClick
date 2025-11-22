@@ -54,7 +54,7 @@ px-4 mt-4 ipad:mt-6 md:mt-8 md:max-w-[80%] mx-auto gap-10">
       <i class="fa-brands fa-instagram hover:text-gray-300"></i>
       <i class="fa-brands fa-youtube hover:text-gray-300"></i>
     </div>
-    <p className=" flex justify-center items-center text-white cursor-pointer text-sm m-0">Copyright @ AfriClick Digital 2025 - All Right reserved.</p>
+    <p className=" flex justify-center text-center items-center text-white cursor-pointer text-sm m-0">Copyright @ AfriClick Digital 2025 - All Right reserved.</p>
             </div>
         </div>
         

@@ -90,7 +90,7 @@ const Service = () => {
     {/* Left button */}
     <button
       onClick={() => scroll("left")}
-      className="absolute -left-8 lg:-left-12 top-1/2 -translate-y-1/2 z-10 bg-white/80 dark:bg-white/80 rounded-full p-2 hover:scale-110 transition"
+      className="absolute -left-2 lg:-left-12 top-1/2 -translate-y-1/2 z-10 bg-white/80 dark:bg-white/80 rounded-full p-2 hover:scale-110 transition"
     >
       <ChevronLeft className="w-6 h-6" />
     </button>
@@ -139,7 +139,7 @@ const Service = () => {
     {/* Right button */}
     <button
       onClick={() => scroll("right")}
-      className="absolute -right-8 lg:-right-12 top-1/2 -translate-y-1/2 z-10 bg-white/80 dark:bg-white/80 rounded-full shadow-md p-2 hover:scale-110 transition"
+      className="absolute -right-2 lg:-right-12 top-1/2 -translate-y-1/2 z-10 bg-white/80 dark:bg-white/80 rounded-full shadow-md p-2 hover:scale-110 transition"
     >
       <ChevronRight className="w-6 h-6" />
     </button>

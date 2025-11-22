@@ -91,7 +91,11 @@ const Navbar = () => {
       spy={true}      
       offset={-80}
       className="cursor-pointer text-2xl font-medium hover:text-indigo-600 dark:hover:text-indigo-400"
-      onClick={() => setMenuOpen(false)}
+      onClick={() => {
+        setMenuOpen(false);
+        setTimeout(() => {}, 0);  
+      }}
+      
     >
        {link}
     </Link>

@@ -85,19 +85,19 @@ const About = () => {
           {/* Founder’s Note */}
           
         <div className="mt-10 space-y-4">
-          <h3 className="text-xl sm:text-2xl font-extrabold">Founder's Note</h3>
-          <p className="text-sm sm:text-base text-black/60 tracking-tight mt-4 sm:mt-6">
+          <h3 className=" dark:text-white  text-xl sm:text-2xl font-extrabold">Founder's Note</h3>
+          <p className="dark:text-white text-sm sm:text-base text-black/60 tracking-tight mt-4 sm:mt-6">
             AfriClick Digital was born out of a passion to help African entrepreneurs harness
             the power of search engines and technology. We’ve seen how visibility changes
             everything — and we’re here to make that happen for you.
           </p>
 
           <div className="mt-6">
-            <p className="font-medium font-pacifico text-base sm:text-lg">
+            <p className=" dark:text-white font-medium font-pacifico text-base sm:text-lg">
               AfriClick
             </p>
             
-            <p className="font-medium font-pacifico text-base sm:text-lg">
+            <p className="dark:text-white font-medium font-pacifico text-base sm:text-lg">
               Founder & SEO Consultant
             </p>
           </div>

@@ -77,7 +77,7 @@ const Service = () => {
 
   return (
  
-    <section id='services' name="services"
+    <section id='services' 
     className="w-full bg-blue-50 py-20 mb-10 dark:bg-gray-900 relative overflow-x-hidden">
     <div className="max-w-[90%] mx-auto relative">
   {/* Section title */}

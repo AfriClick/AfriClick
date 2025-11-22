@@ -42,11 +42,11 @@ const OurValues = () => {
           Our <span className="text-indigo-600 dark:text-white">Values</span>
         </h1>
 
-        {/* Process-style Layout */}
+     
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 relative">
           {values.map((value, index) => (
             <React.Fragment key={index}>
-              {/* Each Step */}
+        
               <motion.div
                 className="flex flex-col items-center text-center w-full sm:w-[240px]"
                 initial="hidden"
@@ -64,7 +64,7 @@ const OurValues = () => {
                     0{index + 1}
                   </div>
 
-                   {/* Horizontal line between icons (desktop only) */}
+               
                    {index < values.length - 1 && (
                     <div className="hidden lg:block absolute right-[-210px] top-1/2 transform -translate-y-1/2 w-[180px] h-[2px] bg-indigo-600 z-0"></div>
                   )}
@@ -83,7 +83,6 @@ const OurValues = () => {
                 </p>
               </motion.div>
 
-              {/* Connecting line between icons (only on large screens) */}
               {index < values.length - 1 && (
                 <div className="hidden lg:block flex-1 h-[2px] bg-gray-300 -mt-16"></div>
               )}

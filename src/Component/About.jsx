@@ -6,7 +6,7 @@ import about2 from "../Component/Assets/AboutAfriclick.webp";
 
 const About = () => {
   return (
-    <div id='about'  
+    <div id='About'  
     className="dark:bg-gray-900" >
       <motion.section
         className="w-[90%] mx-auto py-6 flex flex-col md:flex-row items-center gap-14 text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 transition-colors duration-500 mb-20"
@@ -31,7 +31,7 @@ const About = () => {
 </div>
 
 
-        {/* Right Side (Content) */}
+        {/* Right Side */}
         <div className="flex-1 space-y-8">
           <h2 className="text-xs sm:text-sm inline-flex border border-[#222]/30 dark:border-gray-200 px-2 sm:px-3 py-1 rounded-lg tracking-tight">
             # About Us
@@ -83,7 +83,7 @@ const About = () => {
           </div>
 
           {/* Founder’s Note */}
-          {/*
+          
         <div className="mt-10 space-y-4">
           <h3 className="text-xl sm:text-2xl font-extrabold">Founder's Note</h3>
           <p className="text-sm sm:text-base text-black/60 tracking-tight mt-4 sm:mt-6">
@@ -94,14 +94,14 @@ const About = () => {
 
           <div className="mt-6">
             <p className="font-medium font-pacifico text-base sm:text-lg">
-              Florence
+              AfriClick
             </p>
             
             <p className="font-medium font-pacifico text-base sm:text-lg">
               Founder & SEO Consultant
             </p>
           </div>
-        </div> */}
+        </div> 
 
           {/* Location */}
           <p className="text-gray-500 dark:text-gray-400 text-sm mt-6">

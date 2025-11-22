@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react"; 
+ 
 
 const testimonials = [
   {
@@ -45,7 +45,7 @@ const Testimonial = () => {
 
   return (
  
-    <section id="testimonials" 
+    <section id="Testimonials" 
     className="w-full bg-white py-20 dark:bg-gray-900">
       <div className="max-w-[65%] mx-auto text-center relative">
       <h1 className="font-extrabold text-2xl sm:text-3xl tracking-tighter bg-black text-transparent bg-clip-text mb-10 dark:text-white">
@@ -59,25 +59,7 @@ const Testimonial = () => {
           <p className="text-indigo-600 dark:text-gray-100">{role}</p>
         </div>
 
-        {/* Navigation Arrows (Optional but elegant) */}
-        {/*
-        <div className="flex justify-between items-center absolute top-1/2 left-0 right-0 px-4">
-          <button
-            onClick={prevSlide}
-            className="p-2 bg-white/70 hover:bg-blue-600 hover:text-white rounded-full shadow transition"
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="p-2 bg-white/70 hover:bg-blue-600 hover:text-white rounded-full shadow transition"
-          >
-            <ChevronRight size={24} />
-          </button>
-        </div>
-        */}
-
-        {/* Dots Indicator */}
+        {/* Dots */}
         <div className="flex justify-center mt-6 gap-2">
           {testimonials.map((_, i) => (
             <div

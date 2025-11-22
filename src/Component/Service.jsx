@@ -77,29 +77,25 @@ const Service = () => {
 
   return (
  
-    <section id='services' 
+    <section id='Services' 
     className="w-full bg-blue-50 py-20 mb-10 dark:bg-gray-900 relative overflow-x-hidden">
     <div className="max-w-[90%] mx-auto relative">
-  {/* Section title */}
+ 
   <h2 className="text-xs sm:text-sm inline-flex border border-[#222]/30 px-3 py-1 rounded-lg tracking-tight mb-12 dark:text-white dark:border-white">
     # Our Services
   </h2>
 
-  {/* Scroll container wrapper (new relative layer) */}
   <div className="relative">
-    {/* Left button */}
+    {/* Left side button */}
     <button
       onClick={() => scroll("left")}
       className="absolute -left-6 lg:-left-12 top-1/2 -translate-y-1/2 z-10 bg-white/80 dark:bg-white/80 rounded-full p-2 hover:scale-110 transition"
     >
       <ChevronLeft className="w-6 h-6" />
     </button>
-
-    {/* Scroll area */}
     <div
       ref={scrollRef}
-      className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory pb-4 overflow-hidden"
-    >
+      className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory pb-4 overflow-hidden">
       {services.map((service, index) => (
         <motion.div
           key={index}
@@ -136,7 +132,7 @@ const Service = () => {
       ))}
     </div>
 
-    {/* Right button */}
+    {/* Right side button */}
     <button
       onClick={() => scroll("right")}
       className="absolute -right-6 lg:-right-12 top-1/2 -translate-y-1/2 z-10 bg-white/80 dark:bg-white/80 rounded-full shadow-md p-2 hover:scale-110 transition"

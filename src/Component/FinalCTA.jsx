@@ -12,10 +12,9 @@ const FinalCTA = () => {
         }}
       ></div>
 
-      {/* Dark Blue Overlay */}
       <div className="absolute inset-0 bg-blue-900/70"></div>
 
-      {/* Content */}
+   
       <div className="relative max-w-5xl mx-auto text-center flex flex-col items-center space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           Ready to Grow Your Business Online?
@@ -26,7 +25,7 @@ const FinalCTA = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <button 
-            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: "smooth" })}
+            onClick={() => document.getElementById('Contact').scrollIntoView({ behavior: "smooth" })}
           className="dark:bg-indigo-600 dark:text-white px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300">
             Book a Free 30-Minute Consultation
           </button>
